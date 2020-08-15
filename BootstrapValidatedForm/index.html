@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+
+    <title>Yes Yes Yes</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-warning">
+
+        <a class="navbar-brand" href="">ClicNik</a>
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container bg-light">
+
+        <div class="jumbotron d-flex justify-content-center mb-5">
+            <h1>REGISTER NOW</h1>
+        </div>
+
+        <form onsubmit="return validation()">
+            <div class="form-group">
+                <label for="userEmail" class="form-text">Email :</label>
+                <input type="email" class="form-control" placeholder="Enter Email" id="userEmail" autofocus required>
+                <small>Your private data will not be shared</small>
+            </div>
+            <div class="form-group">
+                <label for="userPass" class="form-text">Password :</label>
+                <input type="password" class="form-control" placeholder="Enter password" id="userPass" required
+                    minlength="8" maxlength="32">
+                <small></small>
+            </div>
+            <div class="form-group">
+                <label for="conPAss" class="form-text">Confirm Password :</label>
+                <input type="password" class="form-control" placeholder="Re-enter the Password" id="conPAss" required>
+                <small></small>
+            </div>
+            <div class="form-group">
+                <label for="phNumber" class="form-text">Phone Number :</label>
+                <input type="tel" class="form-control" placeholder="+91-XXXXXXXXXX" id="phNumber" maxlength="10">
+                <small></small>
+            </div>
+
+            <div class="form-group">
+                <input type="checkbox" id="getUpdate">
+                <label for="getUpdate">Get Updates via Email</label>
+                <small></small>
+            </div>
+            <button type="submit" class="btn btn-md btn-primary form-control">SUBMIT</button>
+            <button onclick="validatePassword()">CHECK</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
