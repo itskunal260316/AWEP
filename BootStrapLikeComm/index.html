@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+    <!--font awesome-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="container d-flex justify-content-center align-items-center" style="flex-direction: column;">
+
+        <div class=" jumbotron d-flex justify-content-center">
+            <h1>POST-A-GRAM</h1>
+        </div>
+
+        <div id="post" class="col-9 bg-dark" style="flex-direction: column;">
+
+            <div id="post-image" class="bg-light mt-3">
+
+                <image class="img-fluid" src="https://picsum.photos/900/500"></image>
+            </div>
+            <div id="lNc" class=" row col-12 m-2 mt-1">
+
+                <button onclick="likePost(this)" class="btn btn-primary m-1 btn-lg fa fa-thumbs-o-up"></button>
+
+                <button onclick="disLike(this)" class="btn btn-primary m-1 btn-lg fa fa-thumbs-o-down"></button>
+
+
+                <input type="text" class=" form-control col-7 m-1" placeholder="Enter comment">
+
+                <button onclick="readValue(this)" class="btn btn-primary col-2 ml-auto btn-lg fa fa-comment-o"></button>
+
+            </div>
+
+            <div id="comm-sec" class="col-12 justify-content-between overflow-auto">
+
+
+                <div id="ref-comm" class="d-flex justify-content-between align-items-center m-1 "
+                    style="visibility: hidden;">
+
+                    <div id="user-commet col" class="ml-3">This is user commetn</div>
+
+                    <button onclick="delPost(this)" class="btn btn-danger m-1 btn-sm fa-trash-o"></button>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
