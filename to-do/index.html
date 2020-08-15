@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="main-cont">
+        <div id="heading" class="jumbotron rounded mt-5">
+            <h1>TO-DO LIST</h1>
+        </div>
+        <div class="to-do-cont col-8 col-lg-4 col-md container p-0 m-0">
+            <div id="input-sec" class="col-l-6 p-0 m-0">
+                <div class="input-group mb-3">
+                    <input type="text" id="input-item" class="form-control" placeholder="Enter Tasks............"
+                        aria-label="User Task" required autocomplete="off">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary bg-warning" style="font-weight: 800;" type="button"
+                            id="button-addon2" onclick="addChore()">ADD</button>
+                    </div>
+                </div>
+            </div>
+            <div class="chores-sec ">
+
+
+
+
+
+
+
+
+                <!--ref remaining chore-->
+                <div id="comm-sec" class="ref-sec mt-2">
+                    <div class="to-do-item col-12"></div>
+                    <button class="btn btn-outline-black bg-white " type="button" id="button-addon2"
+                        onclick="removeChore(this)">DONE</button>
+                </div>
+
+                <!--ref done chore-->
+                <div id="comm-sec2" class="ref-sec mt-2">
+                    <div class="to-do-item2 col-12"></div>
+                </div>
+
+
+            </div>
+            <button type="button" class="btn btn-primary btn-lg btn-block" onclick="clearCrossed()">Clear Completed
+                Jobs</button>
+        </div>
+
+
+    </div>
+    </div>
+</body>
+
+</html>
